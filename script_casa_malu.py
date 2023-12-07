@@ -34,21 +34,21 @@ def main():
         draw_line(400, 350, 400, 250)
 #linhas horizontais     
         draw_line(300, 350, 400, 350)
-        draw_line(300, 250, 400, 250)
+        # draw_line(300, 250, 400, 250)
         
         
         
 #quadrado 2: linhas horizontais     
 
    
-        draw_line(350, 300, 350, 400)
-        draw_line(350, 400, 400, 400)
-# linhas verticais
-        draw_line(400, 400, 400, 300)
-        draw_line(350, 300, 400, 300)
+#         draw_line(350, 300, 350, 400)
+#         draw_line(350, 400, 400, 400)
+# # linhas verticais
+#         draw_line(400, 400, 400, 300)
+#         draw_line(350, 300, 400, 300)
         
-        draw_line(325, 400, 300, 350) 
-        draw_line(325, 400, 350, 350)
+#         draw_line(325, 400, 300, 350) 
+#         draw_line(325, 400, 350, 350)
         
         glfw.swap_buffers(window)
         
