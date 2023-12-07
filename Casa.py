@@ -11,32 +11,24 @@ def draw_line(start1, end1, start2, end2):
     glEnd()
 
 def main():
-#Initializing glfw library
+
     if not glfw.init():
         raise Exception ("glfw can not be initialized")
     
     width, height = 1280, 720
     window = glfw.create_window(width, height, "Camisa", None, None)
 
-
-    #creating a window
-    # window = glfw.create_window(1280, 720, "My OpenGL window", None, None)
-
-    #check if window was created
     if not window:
         glfw.terminate()
         raise Exception ("glfw window can not be created")
 
-    #Set window's position
     glfw.set_window_pos(window, 400, 200)
 
-    #Make the context current
     glfw.make_context_current(window)
 
     glClearColor(0, 0.1, 0.1, 1)
     glOrtho(0, width, 0, height, -1, 1)
 
-    #The main application loop
     while not glfw.window_should_close(window):
         glfw.poll_events()
 
@@ -79,10 +71,8 @@ def main():
         draw_line(700, 550, 730, 550)
         draw_line(730, 550, 730, 470)
         
-
         glfw.swap_buffers(window)
 
-    #terminate glfw, free up allocated resources
     glfw.terminate()
 
 if __name__ == "__main__":
