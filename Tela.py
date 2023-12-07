@@ -55,10 +55,8 @@ def main():
 #Manga Direita
 
         draw_line(680, 450, 730, 390)
-        draw_line(680, 450, 730, 390)
-    
-        # draw_line(680, 520, 800, 420)
-        # draw_line(720, 390, 800, 420)
+        draw_line(730, 390, 770, 420)
+        draw_line(680, 520, 770, 420)
 
 
         glfw.swap_buffers(window)
