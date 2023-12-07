@@ -41,10 +41,25 @@ def main():
         glfw.poll_events()
 
         glClear(GL_COLOR_BUFFER_BIT)
-
+#Linhas laterais
         draw_line(550, 450, 550, 290)
         draw_line(680, 450, 680, 290)
+#Linha Inferior
         draw_line(550, 290, 680, 290)
+#Manga Esquerda
+        draw_line(550, 450, 500, 390)
+        draw_line(500, 390, 460, 420)
+        draw_line(460, 420, 550, 520)
+#Linha Superior
+        draw_line(550, 520, 680, 520)
+#Manga Direita
+
+        draw_line(680, 450, 730, 390)
+        draw_line(680, 450, 730, 390)
+    
+        # draw_line(680, 520, 800, 420)
+        # draw_line(720, 390, 800, 420)
+
 
         glfw.swap_buffers(window)
 
