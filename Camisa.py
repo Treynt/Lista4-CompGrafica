@@ -57,6 +57,11 @@ def main():
         draw_line(680, 450, 730, 390)
         draw_line(730, 390, 770, 420)
         draw_line(680, 520, 770, 420)
+#Botao
+        draw_line(615,510,615,480)
+        draw_line(625,510,625,480)
+        draw_line(615,480,625,480)
+        draw_line(615,510,625,510)
 
 
         glfw.swap_buffers(window)
