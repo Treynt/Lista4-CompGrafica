@@ -4,7 +4,7 @@ from OpenGL.GLU import *
 import math
 
 def draw_line(start1, end1, start2, end2):
-    glColor3f(0.0, 0.0, 1.0)
+    glColor3f(1.0, 1.0, 1.0)
     glBegin(GL_LINE_STRIP)
     glVertex2f(start1, end1)
     glVertex2f(start2, end2)
